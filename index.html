@@ -13,7 +13,7 @@
 </head>
 
 <body class="dm-sans scroll-smooth">
-    <div class="w-screen h-screen relative overflow-hidden text-white">
+    <div class="w-screen h-screen relative overflow-hidden text-white" id="home">
         <div class="h-full bg-[url('public/main-page-bg.png')] bg-repeat bg-[length:50%] z-10">
 
             <div class="absolute inset-0 bg-gradient-to-b from-blue-950 to-indigo-950 opacity-80 z-0"></div>
@@ -39,9 +39,9 @@
         <div class="h-full bg-black" id="canvas">
             <div class="p-20 grid grid-cols-4 h-full gap-6">
                 <div class="col-span-3 grid grid-cols-3 gap-6">
-                    <div class="relative group">
-                        <img src='public/Papa50th/Older/Oldies.jpg' alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black opacity-50 transition duration-500 ease-in-out opacity-[90%] group-hover:hidden">
+                    <div class="relative group rounded-lg">
+                        <img src='public/Papa50th/Older/Oldies.jpg' alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-110 rounded-lg">
+                        <div class="absolute inset-0 bg-black opacity-50 transition duration-500 ease-in-out opacity-[90%] group-hover:hidden rounded-lg">
                             <div class="w-full h-full flex flex-col items-center justify-center ">
                                 <div class="text-3xl font-bold">Two Brothers</div>
                                 <div class="text-lg mt-2 font-medium text-center">Not only was the bond incredibly strong, but Neev and I (Nihal) were lucky enough to be raised with an amazing uncle!</div>
@@ -49,20 +49,103 @@
                         </div>
                     </div>
                     <div class="relative group">
-                        <img src='public/Papa50th/Older/Oldies (1).JPG' alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black opacity-50 transition duration-500 ease-in-out opacity-[90%] group-hover:hidden"></div>
+                        <img src='public/Papa50th/Older/Oldies (1).JPG' alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-110 rounded-lg">
+                        <div class="absolute inset-0 bg-black opacity-50 transition duration-500 ease-in-out opacity-[90%] group-hover:hidden  rounded-lg">
+                            <div class="w-full h-full flex flex-col items-center justify-center p-3">
+                                <div class="text-3xl font-bold">CP Shah Family</div>
+                                <div class="text-lg mt-2 font-medium text-center">So many cousins, and family, right from the start.</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="relative group">
-                        <img src='public/Papa50th/Older/Oldies (2).JPG' alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black opacity-50 transition duration-500 ease-in-out opacity-[90%] group-hover:hidden"></div>
+                        <img src='public/Papa50th/Older/Oldies (2).JPG' alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-110 rounded-lg">
+                        <div class="absolute inset-0 bg-black opacity-50 transition duration-500 ease-in-out opacity-[90%] group-hover:hidden rounded-lg">
+                            <div class="w-full h-full flex flex-col items-center justify-center p-3">
+                                <div class="text-3xl font-bold">Kaki and Family</div>
+                                <div class="text-lg mt-2 font-medium text-center">A family in waiting, present for a lifetime.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-span-1 bg-indigo-700 rounded-lg">
-
+                <div class="col-span-1 bg-indigo-700 rounded-lg p-4 flex flex-col justify-center items-center">
+                    <div class="text-3xl font-bold">Old Times...</div>
+                    <div class="mt-3 text-center">A blast from a past reveals a rich childhood and long-lasting relationships. <b>Hover over images to reveal them.</b></div>
+                    <div class="flex items-center mt-6 gap-8">
+                        <a class="rounded-full outline-2 text-white ring ring-white p-2 hover:bg-white hover:text-indigo-800 hidden" onclick="smoothScrollUp(event, 'home')">
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="currentColor" class="w-5">
+                                <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06l-6.22-6.22V21a.75.75 0 0 1-1.5 0V4.81l-6.22 6.22a.75.75 0 1 1-1.06-1.06l7.5-7.5Z" clip-rule="evenodd" />
+                              </svg>                              
+                        </a>
+                        <a class="rounded-full outline-2 text-white ring ring-white p-2 hover:bg-white hover:text-indigo-800" onclick="smoothScroll(event, 'canvas2')">
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="currentColor" class="w-5 rotate-180">
+                                <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06l-6.22-6.22V21a.75.75 0 0 1-1.5 0V4.81l-6.22 6.22a.75.75 0 1 1-1.06-1.06l7.5-7.5Z" clip-rule="evenodd" />
+                              </svg>                              
+                        </a>
+                    </div>
+                    
                 </div>
+            </div>
+        </div>
+        <div class="h-full bg-black" id="canvas2">
+            <div class="p-20 grid grid-cols-4 h-full gap-6">
+                <div class="col-span-1 bg-indigo-700 rounded-lg p-4 flex flex-col justify-center items-center">
+                    <div class="text-3xl font-bold text-center">...lead to new ones.</div>
+                    <div class="mt-3 text-center">See how our family has grown over time. <b>Hover over images to reveal them.</b></div>
+                    <div class="flex items-center mt-6 gap-8">
+                        <div class="rounded-full outline-2 text-white ring ring-white p-2 hover:bg-white hover:text-indigo-800 hidden" onclick="smoothScroll(event, 'home')">
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="currentColor" class="w-5">
+                                <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06l-6.22-6.22V21a.75.75 0 0 1-1.5 0V4.81l-6.22 6.22a.75.75 0 1 1-1.06-1.06l7.5-7.5Z" clip-rule="evenodd" />
+                              </svg>                              
+                        </div>
+                        <div class="rounded-full outline-2 text-white ring ring-white p-2 hover:bg-white hover:text-indigo-800 hidden" >
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="currentColor" class="w-5 rotate-180">
+                                <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06l-6.22-6.22V21a.75.75 0 0 1-1.5 0V4.81l-6.22 6.22a.75.75 0 1 1-1.06-1.06l7.5-7.5Z" clip-rule="evenodd" />
+                              </svg>                              
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-3 grid grid-cols-3 gap-6">
+                    <div class="relative group rounded-lg">
+                        <img src='public/Papa50th/papa (28).jpg' alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-110 rounded-lg">
+                        <div class="absolute inset-0 bg-black opacity-50 transition duration-500 ease-in-out opacity-[90%] group-hover:hidden rounded-lg">
+                            <div class="w-full h-full flex flex-col items-center justify-center ">
+                                <div class="text-3xl font-bold">Two Brothers</div>
+                                <div class="text-lg mt-2 font-medium text-center">The family sure has grown over the last 30 years or so.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <img src='public/Papa50th/papa (6).jpg' alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-110 rounded-lg">
+                        <div class="absolute inset-0 bg-black opacity-50 transition duration-500 ease-in-out opacity-[90%] group-hover:hidden  rounded-lg">
+                            <div class="w-full h-full flex flex-col items-center justify-center p-3">
+                                <div class="text-3xl font-bold">Chirag Shah's Family</div>
+                                <div class="text-lg mt-2 font-medium text-center">A family of four that owes everything to you.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <img src='public/Papa50th/papa (24).jpg' alt="" class="w-full h-full object-cover transition duration-500 ease-in-out transform group-hover:scale-110 rounded-lg">
+                        <div class="absolute inset-0 bg-black opacity-50 transition duration-500 ease-in-out opacity-[90%] group-hover:hidden rounded-lg">
+                            <div class="w-full h-full flex flex-col items-center justify-center p-3">
+                                <div class="text-3xl font-bold">Fun Times</div>
+                                <div class="text-lg mt-2 font-medium text-center">We grow older and we mature... Happy 50th once again!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <script>
+        function smoothScrollUp(event, targetId) {
+            event.preventDefault(); // Prevent default link behavior
+
+            const target = document.getElementById(targetId);
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
         function smoothScroll(event, targetId) {
             event.preventDefault(); // Prevent default link behavior
 
